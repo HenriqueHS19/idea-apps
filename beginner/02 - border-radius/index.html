@@ -1,0 +1,60 @@
+<html>
+    <head> 
+        <title> Border radius </title>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+
+    <body>
+
+        <div class="container">
+            <div class="box">
+                <h3> Propriedades das bordas </h3>
+                
+                <form>
+                    <div class="group-input">
+                        <label for="txtTopLeft"> Borda superior esquerda </label>
+                        <input type="text" name = "txtTopLeft" />
+                    </div>
+
+                    <div class="group-input">
+                        <label for="txtTopRight"> Borda superior direita </label>
+                        <input type="text" name="txtTopRight" />
+                    </div>
+
+                    <div class="group-input">
+                        <label for="txtBottomLeft"> Borda inferior esquerda </label>
+                        <input type="text" name="txtBottomLeft" />
+                    </div>
+
+                    <div class="group-input">
+                        <label for="txtBottomRight"> Borda inferior direita </label>
+                        <input type="text" name="txtBottomRight" />
+                    </div>
+
+                </form>
+
+                <div class="group-button">
+                    <button type="button" onclick="handleSubmit(event)"> Aplicar </button>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <h3> Resultado </h3>
+                <div class="box-item">
+                    <div class="result">
+
+                    </div>
+
+                    <div class="group-button">
+                        <button type = "button" id = "btnResetar" onclick="handleReset(event)"> Restar </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src = "js/index.js"></script>
+    </body>
+</html>
